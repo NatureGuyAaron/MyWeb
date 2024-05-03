@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>New user</title>
+
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="Menu.css">
+    <script defer src="validation.js"></script>
+
+
+
+
+    <h2>Persan Antoine</h2>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+
+            <li><a href="Homepage.html">Homepage</a></li>
+            <li><a href="Aboutme.html">About me</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Futurecareer.html">Future career</a></li>
+            <li><a href="Newuser.html">New user</a></li>
+            <li><a href="Search.html">Search</a></li>
+            <li><a href="Contactme.html">Contact me</a></li>
+        </ul>
+    </div>
+    <div class="clearfix">
+
+
+        <div id="error"> </div>
+        <form id="form" action="" method="get">
+            <!--Id for form-->
+            <div class="form">
+                <!--Id for error-->
+
+                <label for="Firstname"> First name:</label>
+                <input id="Firstname" name="FirstName" type="Text" required>
+            </div>
+            <br>
+            <div>
+                <label for="Last name"> Last name:</label>
+                <input id="Last name" name="Last name" type="Text" required>
+            </div>
+            <br>
+            <div class="inputbox">
+                <label for="Password">  Password:</label>
+                <input id="password" placeholder="Enter password" name="Password" type="Text">
+<div id="toggle"></div>
+                <br>
+                <br>
+                      <label for="Confirm">Confirm:</label>
+                <input id="Confirm" name="Confirm" type="Text" oninput=" return validation() ">
+                <div id="toggle"></div>
+            </div>
+
+            <div>
+                <br>
+                <button type="submit" id="submitbtn">
+                    Submit
+                </button>
+            </div>
+    </div>
+    </div><!-- wrap div-->
+
+    <script>
+        function validation(); {
+            var Password = document.getElementById('Password')
+            var Confirm = document.getElementById('Confirm')
+        }
+        if (Password.value == Confirm.value) {
+            document.getElementById('password').style.display = 'none'
+
+        }
+        else {
+            document.getElementById('Password').messages.push('Please Retype your password')
+            document.getElementById('Comfirm').style.display = 'none'
+
+        }
+    </script>
+
+    </form>
+
+    <style>
+        footer {
+
+            bottom: 0;
+        }
+    </style>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br><br><br><br><br><br><br><br>
+    <footer>
+        <h2>End of page</h2>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+body {
+    font-family: comic;
+    color:aliceblue;
+    background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(holiday.jpg);
+    background-attachment: fixed;
+    font-size: large;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+
+}
+
+
+
+.Head{
+    text-align: center;
+}
+.Container{ /*search page*/
+    width: 100%;
+min-height:100vh;
+padding:5%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.search-bar{ /*search page*/
+    width:100%;
+    max-width: 700px;
+    background: rgb(255, 255, 255,0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+
+}
+.search-bar input{
+ background: transparent;
+ flex:1;
+ border:0;
+ outline:none;
+ padding: 24px 20px;
+ font-size: 20px;
+ color: #ffffff;
+ 
+
+
+}
+::placeholder{
+    color: #ffffff;
+} 
+.search-bar button{
+    border:0;
+    border-radius: 50%;
+    width:60px;
+    height:60px;
+    background:#f3f3f3 ;
+    cursor:pointer;
+}
+.Table{
+margin: 0 auto;
+
+    
+}
+.Pic{
+
+align-items: center;
+justify-content: center;
+}
+td .me{
+    width: 60%;
+}
+td .bio{
+    width: 40%;
+}
+
+.content_wrap{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.media{
+
+position: absolute;
+top:40%;
+left:50%;
+transform: translate(-50% , -50%);
+border:1px solid #fff;
+
+ font-size: 60px;
+
+
+}
+.media a{
+    color:rgb(255, 255, 255);
+    size:12ch;
+    margin: 60px  60px;
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+   }
+   .media a:hover{
+    transition:0 .5s;
+    color: rgb(226, 186, 134);
+   }
+  #submitbtn{
+    border:0;
+ background-color: #201414;
+ color:#f3f3f3;
+ margin:1rem 0;
+ width: auto;
+ text-transform: uppercase;
+ 
+  }
+  #submitbtn:hover{
+    background-color: rgb(187, 112, 112);
+  }
+  .clearfix{
+    font-family: sans-serif;
+    text-align:center;  
+    border: 1px solid #ffffff; 
+    background-color: #201414;
+    opacity: 0.8;/*new user class center for header*/  
+    flex:1;
+    border:6;
+    outline:none;
+    font-size: 20px;
+    color: #ffffff;
+}
+.inputbox input{
+ 
+
+    border:none;
+    box-shadow:border-box;
+    box-shadow: -4px -4px 10px rgba(255, 255,255,1),
+    inset 4px  4px 10px rgba(0,0,0,0.05)
+    inset -4px  -4px 10px rgba(255,255,255,1)
+    inset 4px  4px 10px rgba(0,0,0,0.05);
+}
+#toggle{
+    position: absolute;
+    top:50%;
+    right:20px;
+}
+#contact{
+    height:100%;
+    
+}

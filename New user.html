@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="Project2.css">
+    <title>New user</title>
+    <h1 id=" Head">New user</h1>    <!--Id for h1-->
+<!-- <script defer src="validation.js"></script> -->
+</head>
+
+<body="">
+
+    </div>
+    <div class="topnav">
+        <ul>
+
+            <li><a href="Homepage.html">Homepage</a></li>
+            <li><a href="About me.html">About me</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Future career.html">Future career</a></li>
+            <li><a href="New user.html">New user</a></li>
+
+            <li><a href="Search.html">Search</a></li>
+            <li><a href="Contact me.html">Contact me</a></li>
+        </ul>
+    </div>
+<br>
+
+
+<div>
+    <div id="error" >
+        
+    </div> <!--Id for error-->
+    <form id ="form" form action=""> <!--Id for form-->
+       
+       <label for="Firstname"> First name</label>
+<input id="Firstname"   name="FirstName" type="Text">
+<br>
+<br>
+<label for="Last name"> Last name</label>
+<input id="Last name"   name="Last name" type="Text">
+       <br>
+       <br>
+<label for="Password"> Password</label>
+<input id=" Password"   name="Password" type="Text">
+<br>
+<br>
+<label for="Confirm"> Confirm</label>
+<input id="Confirm"   name="Confirm" type="Text" oninput=" return validation() ">
+       
+        <div>
+            <br>
+            <button type="submit">
+                Submit
+            </button>
+        
+            <script>
+                function validation()
+                    var Password = document.getElementById('Password')
+                    var Confirm= document.getElementById('Confirm')
+                
+                    if(Password.value == Confirm.value){
+                        document.getElementById('password').style.display='none';}
+                else{
+                    document.getElementById('password').style.display='Please Retype your password';
+                    // document.getElementById('password').style.display='none'
+                    
+                }
+            </script>
+   
+    </form>
+    </body>
+
+</html>

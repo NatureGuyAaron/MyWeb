@@ -1,0 +1,52 @@
+body {
+    font-family: comic;
+    background-image: url(Software.jpg);
+    font-display: white;
+    font-size: large;
+    text-decoration: aqua;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p {
+    color: rgb(245, 245, 245);
+    font-style: italic;
+}
+
+h2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    text-align: center;
+    width: 100%;
+    color: rgb(255, 249, 251);
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+background-color: black;
+opacity: 0.8;
+}
+
+ li {
+display: inline-block;
+ }
+
+ul li a{
+    color: aliceblue;
+}
+
+li a:hover {
+    display: block;
+    width: 60;
+    background-color: rgb(189, 26, 26);
+    color: white;
+
+
+}
